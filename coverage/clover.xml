@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1710602585134" clover="3.2.0">
-  <project timestamp="1710602585134" name="All files">
+<coverage generated="1713820882079" clover="3.2.0">
+  <project timestamp="1713820882079" name="All files">
     <metrics statements="19" coveredstatements="19" conditionals="9" coveredconditionals="9" methods="1" coveredmethods="1" elements="29" coveredelements="29" complexity="0" loc="19" ncloc="19" packages="1" files="1" classes="1"/>
-    <file name="CalculateComission.js" path="D:\Assiginment\ComissionsCode\CalculateComission.js">
+    <file name="CalculateComission.js" path="/Users/adarshkarne/Downloads/Activity-5-Automating-Testing-v2-main/CalculateComission.js">
       <metrics statements="19" coveredstatements="19" conditionals="9" coveredconditionals="9" methods="1" coveredmethods="1"/>
       <line num="4" count="8" type="stmt"/>
       <line num="5" count="8" type="stmt"/>

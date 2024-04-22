@@ -15,17 +15,6 @@ describe("calculateCommissionFunction", () => {
         ).toEqual([expectedTotalSales, expectedCommission]);
     });
 
-    // Test error case for exceeding maximum sales limits
-    test("should return an error message when any sales quantity exceeds maximum limit", () => {
-        const lockQty = 80;
-        const stockQty = 90;
-        const barrelQty = 100;
-
-        expect(calculateCommissionFunction(lockQty, stockQty, barrelQty)).toBe(
-            "Sales quantities exceed maximum limits.",
-        );
-    });
-
     // Test boundary condition for maximum limit
     test("should return total sales and commission with commission rate 0.2 for total sales equal to 1800", () => {
         const lockQty = 40;
@@ -82,6 +71,18 @@ describe("calculateCommissionFunction", () => {
         ).toEqual([expectedTotalSales, expectedCommission]);
     });
 
+    // Test error case for exceeding maximum sales limits
+    test("should return an error message when any sales quantity exceeds maximum limit", () => {
+        const lockQty = 80;
+        const stockQty = 90;
+        const barrelQty = 100;
+
+        expect(calculateCommissionFunction(lockQty, stockQty, barrelQty)).toBe(
+            "Sales quantities exceed maximum limits.",
+        );
+    });
+
+    // Test commission calculation with total sales less than 1000
     test("should return total sales and commission with commission rate 0.2 for total sales less than 1000", () => {
         const lockQty = 7;
         const stockQty = 12;
@@ -95,6 +96,7 @@ describe("calculateCommissionFunction", () => {
         ).toEqual([expectedTotalSales, expectedCommission]);
     });
 
+    // Test commission calculation with total sales less than 1800
     test("should return total sales and commission with commission rate 0.2 for total sales less than 1800", () => {
       const lockQty = 7;
       const stockQty = 11;
